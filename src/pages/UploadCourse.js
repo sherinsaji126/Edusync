@@ -1,0 +1,1 @@
+function UploadCourse() { return <div>Upload Course Page</div>; } export default UploadCourse;

@@ -1,0 +1,248 @@
+{
+  "title": "C++ Programming Assessment",
+  "description": "Basic C++ Programming Concepts Test",
+  "timeLimit": 60,
+  "instructions": "Please select the best answer for each question. Each question is worth 10 points.",
+  "questions": [
+    {
+      "questionText": "Which of the following is the correct syntax to declare a pointer in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "int *ptr;",
+      "options": [
+        {
+          "optionText": "int ptr;",
+          "isCorrect": false
+        },
+        {
+          "optionText": "int *ptr;",
+          "isCorrect": true
+        },
+        {
+          "optionText": "pointer int ptr;",
+          "isCorrect": false
+        },
+        {
+          "optionText": "ptr int;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "What is the output of 'sizeof(char)' in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "1",
+      "options": [
+        {
+          "optionText": "1",
+          "isCorrect": true
+        },
+        {
+          "optionText": "2",
+          "isCorrect": false
+        },
+        {
+          "optionText": "4",
+          "isCorrect": false
+        },
+        {
+          "optionText": "8",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "Which operator is used for dynamic memory allocation in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "new",
+      "options": [
+        {
+          "optionText": "malloc",
+          "isCorrect": false
+        },
+        {
+          "optionText": "new",
+          "isCorrect": true
+        },
+        {
+          "optionText": "alloc",
+          "isCorrect": false
+        },
+        {
+          "optionText": "create",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "What is the default access specifier in a C++ class?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "private",
+      "options": [
+        {
+          "optionText": "public",
+          "isCorrect": false
+        },
+        {
+          "optionText": "private",
+          "isCorrect": true
+        },
+        {
+          "optionText": "protected",
+          "isCorrect": false
+        },
+        {
+          "optionText": "none",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "Which header file is required for input/output operations in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "<iostream>",
+      "options": [
+        {
+          "optionText": "<stdio.h>",
+          "isCorrect": false
+        },
+        {
+          "optionText": "<iostream>",
+          "isCorrect": true
+        },
+        {
+          "optionText": "<conio.h>",
+          "isCorrect": false
+        },
+        {
+          "optionText": "<istream>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "What is the correct way to declare a constant variable in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "const int x = 10;",
+      "options": [
+        {
+          "optionText": "const int x = 10;",
+          "isCorrect": true
+        },
+        {
+          "optionText": "constant int x = 10;",
+          "isCorrect": false
+        },
+        {
+          "optionText": "final int x = 10;",
+          "isCorrect": false
+        },
+        {
+          "optionText": "let const x = 10;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "Which of the following is used to prevent multiple inclusions of a header file?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "#ifndef",
+      "options": [
+        {
+          "optionText": "#ifdef",
+          "isCorrect": false
+        },
+        {
+          "optionText": "#ifndef",
+          "isCorrect": true
+        },
+        {
+          "optionText": "#define",
+          "isCorrect": false
+        },
+        {
+          "optionText": "#pragma once",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "What is the correct way to inherit class B from class A in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "class B : A { };",
+      "options": [
+        {
+          "optionText": "class B : A { };",
+          "isCorrect": true
+        },
+        {
+          "optionText": "class B extends A { };",
+          "isCorrect": false
+        },
+        {
+          "optionText": "class B inherits A { };",
+          "isCorrect": false
+        },
+        {
+          "optionText": "class B implements A { };",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "Which operator is used to access members of a pointer to an object in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "->",
+      "options": [
+        {
+          "optionText": ".",
+          "isCorrect": false
+        },
+        {
+          "optionText": "->",
+          "isCorrect": true
+        },
+        {
+          "optionText": "::",
+          "isCorrect": false
+        },
+        {
+          "optionText": "*",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "questionText": "What is the purpose of 'virtual' keyword in C++?",
+      "type": "MultipleChoice",
+      "points": 10,
+      "correctAnswer": "To support runtime polymorphism",
+      "options": [
+        {
+          "optionText": "To make the function static",
+          "isCorrect": false
+        },
+        {
+          "optionText": "To support runtime polymorphism",
+          "isCorrect": true
+        },
+        {
+          "optionText": "To make the function inline",
+          "isCorrect": false
+        },
+        {
+          "optionText": "To make the variable global",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+} 

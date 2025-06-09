@@ -1,0 +1,259 @@
+/* === Base Page Styling === */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("C:\Users\Shijo\Desktop\sherin-edusync\sherin-edusync\public\office-coffee-interior-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* === Layout Containers === */
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* === Sidebar / Navbar Styling === */
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  background-color: #ed885520; /* Deep indigo background */
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  transition: color 0.3s;
+}
+
+.sidebar a:hover {
+  color: #93c5fd; /* Light blue on hover */
+}
+
+/* === Main Content Area === */
+.main-content {
+  flex-grow: 1;
+  margin-left: 280px; /* Account for fixed sidebar */
+  padding: 3rem;
+  color: white;
+  
+}
+
+.welcome-banner {
+  color: rgb(13, 13, 13);
+  margin-bottom: 2rem;
+  text-align: center;
+   font-size: 1.2rem;
+}
+/* Center the entire content of the RoleSelectionPage */
+.center-page {
+  color: rgb(13, 13, 13);
+  text-align: center;
+}
+
+
+/* === Buttons === */
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #7c3aed;
+  color: white;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color:#7c3aed;
+}
+/* === Login Page Styling === */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+
+.login-box {
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.login-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1e1e2f;
+   text-align: center;
+}
+
+.input-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+  display: block;
+}
+
+.login-box input{
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1.2rem;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #6d28d9;
+}
+
+.login-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+
+.login-footer a {
+  color: #7c3aed;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+/* === Register Page Styling === */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 0px;
+}
+
+.register-box {
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  text-align: left;
+}
+
+.register-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1e1e2f;
+  text-align: center;
+}
+
+.register-box input,
+.register-box select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.register-button {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1.2rem;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #6d28d9;
+}
+
+.register-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #444;
+  text-align: center;
+}
+
+.register-footer a {
+  color: #7c3aed;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+/* === Message Styling === */
+.success-message {
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid #bbf7d0;
+}
+
+.error-message {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border: 1px solid #fecaca;
+}
+

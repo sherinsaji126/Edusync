@@ -1,0 +1,393 @@
+.form-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.form-box h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 1.4rem;
+    font-size: 2rem;
+}
+
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group input:disabled,
+.form-group textarea:disabled,
+.form-group select:disabled {
+    background: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.file-upload-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.file-upload-container .button.secondary {
+    align-self: flex-start;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.file-upload-container .button.secondary:hover:not(:disabled) {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.file-upload-container .button.secondary:active {
+    transform: translateY(0);
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9rem;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.file-info .file-size {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85em;
+}
+
+.file-hint {
+    margin: 0.5rem 0 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Drag and drop styles */
+.file-drop-zone {
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.file-drop-zone:hover, .file-drop-zone.active {
+    border-color: #4dabf7;
+    background: rgba(77, 171, 247, 0.05);
+}
+
+.file-drop-zone p {
+    margin: 0.5rem 0 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+.file-drop-zone .icon {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.button.primary {
+    background: rgba(0, 123, 255, 0.8);
+    color: white;
+}
+
+.button.primary:hover:not(:disabled) {
+    background: rgba(0, 123, 255, 1);
+    transform: translateY(-2px);
+}
+
+.button.secondary {
+    background: rgba(108, 117, 125, 0.8);
+    color: white;
+}
+
+.button.secondary:hover:not(:disabled) {
+    background: rgba(108, 117, 125, 1);
+    transform: translateY(-2px);
+}
+
+.button:disabled {
+    background: rgba(204, 204, 204, 0.5);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.error-message {
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff8080;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.success-message {
+    background: rgba(46, 125, 50, 0.1);
+    color: #81c784;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    text-align: center;
+    border: 1px solid rgba(46, 125, 50, 0.2);
+}
+
+.help-text {
+    display: block;
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+}
+
+.loading-spinner {
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+}
+
+.quiz-progress {
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.question-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.question-container h3 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.option-label:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.option-label input[type="radio"] {
+    margin: 0;
+}
+
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.quiz-navigation .button {
+    width: auto;
+    min-width: 120px;
+}
+
+/* Assessment card styles */
+.assessments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.assessment-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.assessment-card h3 {
+    color: white;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+.assessment-details {
+    margin-bottom: 1.5rem;
+}
+
+.assessment-details p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0.5rem 0;
+}
+
+.assessment-details strong {
+    color: white;
+}
+
+.no-assessments-message {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-size: 1.2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+    padding-right: 2.5rem;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-group select option {
+    padding: 0.75rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.form-group select option:hover,
+.form-group select option:focus,
+.form-group select option:active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Style for disabled state */
+.form-group select:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+/* Add a custom arrow indicator */
+.form-group::after {
+    content: '';
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.form-help-text {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.form-help-text pre {
+    background-color: #f5f5f5;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 8px 0;
+    overflow-x: auto;
+    font-size: 0.85em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+} 
